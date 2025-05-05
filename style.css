@@ -1,0 +1,690 @@
+/* Сітка */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-color: #F2EDFF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Контейнер */
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Хедер */
+  .header {
+    background-color: #F2EDFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Логотип */
+  .logo {
+    display: block;
+    height: 56px;
+    width: auto;
+  }
+  
+  /* Меню */
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .header__nav a:hover {
+    color: #FF6F00;
+  }
+  
+  /* Кнопка */
+  .header__button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #FF6F00;
+    color: #272727;
+    border-radius: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF6F00;
+    color: #fff;
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: #F2EDFF;
+    position: relative;
+    padding: 32px 0 0;
+    font-family: 'Roboto Serif', serif;
+  }
+  
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .hero__content {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .hero__date {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0 0 16px;
+    color: #0B0B0B;
+  }
+  
+  .hero__title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #FF6F00;
+    margin: 0 0 8px;
+  }
+  
+  .hero__subtitle {
+    font-size: 32px;
+    color: #585858;
+    margin-bottom: 30px;
+  }
+  
+  .hero__buttons {
+    display: flex;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero__image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+  
+  /* Хвиля внизу */
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("img/img_curve.svg") no-repeat center bottom;
+    background-size: cover;
+  }
+
+  .btn {
+    width: 207px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Помаранчева */
+  .btn-primary {
+    background-color: #FF6F00;
+    border: 2px solid #FF6F00;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+  }
+  
+  /* Прозора */
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid #FF6F00;
+    color: #272727;
+  }
+  
+  .btn-outline:hover {
+    background-color: #FF6F00;
+    color: #fff;
+  }
+  
+  .organizer {
+    padding: 80px 0;
+    margin-top: 64px;
+    background-color: #F2EDFF;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .organizer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 40px;
+  }
+  
+  .organizer__top,
+  .organizer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .organizer__title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 24px;
+  }
+  
+  .organizer__desc {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #585858;
+    max-width: 600px;
+  }
+  
+  .organizer__img {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .organizer__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  
+  .organizer__goals {
+    max-width: 600px;
+  }
+  
+  .organizer__goals-title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 16px;
+  }
+  
+  .organizer__goals-list {
+    list-style: none;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #585858;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .organizer__goals-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  
+
+  /* Сітка */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-color: #F2EDFF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Контейнер */
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Хедер */
+  .header {
+    background-color: #F2EDFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Логотип */
+  .logo {
+    display: block;
+    height: 56px;
+    width: auto;
+  }
+  
+  /* Меню */
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .header__nav a:hover {
+    color: #FF6F00;
+  }
+  
+  /* Кнопка */
+  .header__button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #FF6F00;
+    color: #272727;
+    border-radius: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 207px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-primary {
+    background-color: #FF6F00;
+    border: 2px solid #FF6F00;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid #FF6F00;
+    color: #272727;
+  }
+  
+  .btn-outline:hover {
+    background-color: #FF6F00;
+    color: #fff;
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: #F2EDFF;
+    position: relative;
+    padding: 32px 0 0;
+    font-family: 'Roboto Serif', serif;
+  }
+  
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .hero__content {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .hero__date {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0 0 16px;
+    color: #0B0B0B;
+  }
+  
+  .hero__title {
+    font-size: 48px;
+    font-weight: 500;
+    color: #FF6F00;
+    margin: 0 0 8px;
+  }
+  
+  .hero__subtitle {
+    font-size: 32px;
+    color: #585858;
+    margin-bottom: 30px;
+  }
+  
+  .hero__buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero__image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url("img/img_curve.svg") no-repeat center bottom;
+    background-size: cover;
+  }
+  
+  .organizer {
+    padding: 80px 0;
+    margin-top: 64px;
+    background-color: #F2EDFF;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .organizer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 40px;
+  }
+  
+  .organizer__top,
+  .organizer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .organizer__title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 24px;
+  }
+  
+  .organizer__desc {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #585858;
+    max-width: 600px;
+  }
+  
+  .organizer__img {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .organizer__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  
+  .organizer__goals {
+    max-width: 600px;
+  }
+  
+  .organizer__goals-title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 16px;
+  }
+  
+  .organizer__goals-list {
+    list-style: none;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #585858;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .organizer__goals-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  /* Why Us */
+  .whyus {
+    padding: 80px 0;
+    background-color: #F2EDFF;
+  }
+  
+  .whyus__title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 40px;
+  }
+  
+  .whyus__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .whyus__card {
+    border: 1px solid ; color: #9B9B9B;/* заміни на var(--gray-40), якщо є */
+    padding: 8px 8px 16px 8px;
+    width: 437px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+  
+  .whyus__card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .whyus__card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #272727;
+    margin-top: 16px;
+  }
+  
+  .whyus__card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #585858;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+  
+  .whyus__more {
+    display: inline-block;
+    margin-top: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #272727;
+    text-decoration: underline;
+  }
+  
+  .whyus__more:hover{
+    color: #FF6F00;
+  }
+
+  .gallery {
+    padding: 80px 0;
+    background-color: #F2EDFF;
+  }
+  
+  .gallery__title {
+    font-family: 'Roboto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #272727;
+    margin-bottom: 24px;
+  }
+  
+  .gallery__wrapper {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+  }
+  
+  .gallery__wrapper img {
+    flex: 0 0 auto;
+    width: 668px;
+    height: 361px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    background-color: #eee;
+  }
+  .footer {
+    background-color: #272727;
+    padding: 32px 0;
+    color: #fff;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer__left .logo {
+    height: 56px;
+  }
+  
+  .footer__center {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .footer__center img {
+    height: 195px;
+    object-fit: contain;
+  }
+  
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  .footer__right a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  
+  .footer__right a:hover {
+    color: #FF6F00;
+  }
+  
