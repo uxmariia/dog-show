@@ -1,0 +1,240 @@
+/* Загальні стилі */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Хедер */
+  .header {
+    background-color: #F2EDFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;       /* <--- прибирає додатковий простір */
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  
+  /* Логотип */
+  .logo {
+    display: block;
+    height: 56px;
+    width: auto;
+  }
+  
+  /* Меню */
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .header__nav a:hover {
+    color: #FF6F00;
+  }
+  
+  /* Кнопка */
+  .header__button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    width: 207px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #FF6F00;
+    color: #272727;
+    border-radius: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF6F00;
+    color: #fff;
+  }
+  
+body {
+    background-color: #F2EDFF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #272727;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  h1 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .field-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .field {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9B9B9B;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  small a {
+    color: #272727;
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 668px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #FF6F00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #e65c00;
+  }
+  
+  .footer {
+    background-color: #272727;
+    padding: 32px 0;
+    color: #fff;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer__left .logo {
+    height: 56px;
+  }
+  
+  .footer__center {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .footer__center img {
+    height: 195px;
+    object-fit: contain;
+  }
+  
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  
+  .footer__right a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  
+  .footer__right a:hover {
+    color: #FF6F00;}
+
+  @media (max-width: 768px) {
+    .field {
+      flex: 1 1 100%;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
