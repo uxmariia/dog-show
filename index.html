@@ -20,6 +20,24 @@
 <meta name="apple-mobile-web-app-title" content="Dog Show" />
 <link rel="manifest" href="/site.webmanifest" />
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.organizer__img').forEach(img => {
+      observer.observe(img);
+    });
+  });
+</script>
+
+
 <body>
  <header class="header"> 
     <div class="container header__container">
@@ -29,8 +47,8 @@
           
           <nav class="header__nav">
             <ul>
-              <li><a href="#">Головна</a></li>
-              <li><a href="#">Реєстрація</a></li>
+              <li><a href="index.html">Головна</a></li>
+              <li><a href="registration.html">Реєстрація</a></li>
               <li><a href="#">Експерти</a></li>
               <li><a href="#">Локація</a></li>
             </ul>
@@ -48,7 +66,7 @@
         <p class="hero__subtitle">CAC-UA</p>
   
         <div class="hero__buttons">
-          <a href="#" class="btn btn-primary">Зареєструватись</a>
+          <a href="registration.html" class="btn btn-primary">Зареєструватись</a>
           <a href="#" class="btn btn-outline">Деталі</a>
         </div>
       </div>
@@ -141,7 +159,6 @@
   
       <div class="footer__center">
         <img src="img/ukraine-kennel-logo.png" alt="КСУ та FCI" />
-        
       </div>
   
       <div class="footer__right">
